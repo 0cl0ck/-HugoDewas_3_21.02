@@ -254,13 +254,11 @@ footer ul li {
   margin-bottom: 20px;
   border-radius: 20px;
   padding-left: 15px;
-
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 .submenu .price {
   display: flex;
-  flex: 1;
   align-items: flex-end;
   justify-content: flex-end;
   padding-bottom: 1em;
@@ -268,12 +266,23 @@ footer ul li {
   font-weight: 700;
 }
 
+.submenu .submenu-title {
+  overflow: hidden;
+  flex: 1;
+}
+
 .submenu .submenu-title h4 {
   margin-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .submenu .submenu-title p {
   margin-top: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .submenu-check-icon {
@@ -281,7 +290,21 @@ footer ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3em;
+  width: 0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.submenu-check-icon i {
+  opacity: 0;
+}
+
+.cards article:hover .submenu-check-icon {
+  animation: slideIn 0.4s forwards;
+}
+
+.cards article:hover .submenu-check-icon i {
+  animation: rotateIcon 0.4s forwards;
 }
 
 .order-btn {
@@ -304,4 +327,25 @@ footer ul li {
   margin-top: -20px;
   background-color: #f6f6f6;
   position: relative;
+}
+
+@keyframes slideIn {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 3em;
+  }
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(1turn);
+    opacity: 1;
+  }
 }
