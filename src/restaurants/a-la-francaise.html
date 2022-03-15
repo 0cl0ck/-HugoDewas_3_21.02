@@ -17,14 +17,14 @@
     <header class="header__logo">
       <a href="../index.html"><i class="fas fa-arrow-left"></i></a>
       <h1>Ohmyfood</h1>
-
-      <div class="header__img">
-        <img
-          src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-          alt="À la française"
-        />
-      </div>
     </header>
+
+    <div class="img-menu">
+      <img
+        src="../assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+        alt="À la française"
+      />
+    </div>
 
     <main>
       <div class="menus__container">
@@ -34,12 +34,13 @@
             <i class="far fa-heart"></i>
           </div>
         </header>
+        <div class="card">
         <section class="cards starters">
-          <div class="starters__h3">
+          <div class="cards__title starters__h3">
             <h3>ENTRÉES</h3>
           </div>
           <article>
-            <div class="submenu">
+            <div class="submenu delay1">
               <div class="submenu__title">
                 <h4>Tartare de poulpe acidulé</h4>
                 <p>Aux zests d'orange</p>
@@ -51,7 +52,7 @@
             </div>
           </article>
           <article>
-            <div class="submenu">
+            <div class="submenu delay2">
               <div class="submenu__title">
                 <h4>Velouté de légumes d'antan</h4>
                 <p>Carotte, panais, topinambour</p>
@@ -63,7 +64,7 @@
             </div>
           </article>
           <article>
-            <div class="submenu">
+            <div class="submenu delay3">
               <div class="submenu__title">
                 <h4>Soupe à l'oignon</h4>
                 <p>Revisisté</p>
@@ -75,11 +76,11 @@
             </div>
           </article>
         </section>
-
+       
         <section class="cards courses">
-          <div class="courses__h3"><h3>PLATS</h3></div>
+          <div class="cards__title courses__h3"><h3>PLATS</h3></div>
           <article>
-            <div class="submenu">
+            <div class="submenu delay4">
               <div class="submenu__title">
                 <h4>Coquilles Saint-Jacques</h4>
                 <p>Accompagné d'une purée de panais</p>
@@ -91,7 +92,7 @@
             </div>
           </article>
           <article>
-            <div class="submenu">
+            <div class="submenu delay5">
               <div class="submenu__title">
                 <h4>Magret de canard</h4>
                 <p>Et parmentier de pommes de terres</p>
@@ -103,7 +104,7 @@
             </div>
           </article>
           <article>
-            <div class="submenu">
+            <div class="submenu delay6">
               <div class="submenu__title">
                 <h4>Pigeonneau d'Ille-et-Vilaine</h4>
                 <p>Sur son lit de gnocchis aux légumes</p>
@@ -117,9 +118,9 @@
         </section>
 
         <section class="cards desserts">
-          <div class="desserts__h3"><h3>DESSERTS</h3></div>
+          <div class="cards__title desserts__h3"><h3>DESSERTS</h3></div>
           <article>
-            <div class="submenu">
+            <div class="submenu delay7">
               <div class="submenu__title">
                 <h4>Pétales de violettes glacés</h4>
                 <p>Et purée de noisettes</p>
@@ -131,7 +132,7 @@
             </div>
           </article>
           <article>
-            <div class="submenu">
+            <div class="submenu delay8">
               <div class="submenu__title">
                 <h4>Fondant au chocolat</h4>
                 <p>Revisité</p>
@@ -143,7 +144,7 @@
             </div>
           </article>
           <article>
-            <div class="submenu">
+            <div class="submenu delay9">
               <div class="submenu__title">
                 <h4>Millefeuille croustillant</h4>
                 <p>Myrtilles et pâtes d'amande</p>
@@ -154,6 +155,7 @@
               </div>
             </div>
           </article>
+        </div>
         </section>
       </div>
       <div class="order-btn">
@@ -161,18 +163,24 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="footer">
       <div class="footer__container">
         <span class="footer__logo">Ohmyfood</span>
         <ul class="footer__list">
           <li class="footer__link">
-            <i class="fas fa-utensils"></i> Proposer un restaurant
+            <a href="#"
+              ><i class="fas fa-utensils"></i> Proposer un restaurant
+            </a>
           </li>
           <li class="footer__link">
-            <i class="fas fa-hands-helping"></i> Devenir partenaire
+            <a href="#">
+              <i class="fas fa-hands-helping"></i> Devenir partenaire
+            </a>
           </li>
-          <li class="footer__link">Mentions légales</li>
-          <li class="footer__link">Contact</li>
+          <li class="footer__link"><a href="#">Mentions légales</a></li>
+          <li class="footer__link">
+            <a href="mailto:contact@ohmyfood.com">Contact</a>
+          </li>
         </ul>
       </div>
     </footer>
