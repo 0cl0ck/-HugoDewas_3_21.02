@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@keyframes heartAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes heartDisappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @keyframes slideIn {
   0% {
     width: 0;
@@ -248,6 +264,14 @@ header h1 h2 {
   font-size: 2em;
 }
 
+.heart {
+  position: relative;
+}
+.heart .fas {
+  position: absolute;
+  opacity: 0;
+}
+
 /********* Footer ********/
 .footer {
   background-color: #353535;
@@ -461,6 +485,16 @@ header h1 h2 {
     max-width: 1280px;
     margin: auto;
   }
+}
+.menus__btn .heart .fas {
+  color: red;
+}
+
+.heart:hover .far {
+  animation: heartDisappear 0.5s forwards;
+}
+.heart:hover .fas {
+  animation: heartAppear 0.5s forwards;
 }
 
 /*# sourceMappingURL=style.css.map */
