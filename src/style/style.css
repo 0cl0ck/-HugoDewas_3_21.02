@@ -507,8 +507,6 @@ header h2 {
 .heart .fas {
   background: linear-gradient(to bottom, #9356dc, #ff79da);
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
