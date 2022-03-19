@@ -101,13 +101,31 @@ body {
   margin: 0;
 }
 
-.container-menus main {
-  border-radius: 35px;
-  margin-top: -2em;
-  background-color: #f6f6f6;
-  position: relative;
+.loader {
+  background-color: #fff;
+  opacity: 0.8;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  z-index: 1;
+  animation: loaderDisappear 3s forwards;
+}
+.loader::after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-top: 5px solid #9356dc;
+  border-right: 5px solid transparent;
+  border-radius: 50%;
+  animation: spin 3s infinite ease-in-out;
 }
 
+/********************************
+*****         Index          ****
+*********************************/
 /************ Header ***********/
 header h1 {
   font-family: Shrikhand, "cursive";
@@ -317,6 +335,13 @@ header h2 {
 /********************************
 *****         Menus          ****
 *********************************/
+.container-menus main {
+  border-radius: 35px;
+  margin-top: -2em;
+  background-color: #f6f6f6;
+  position: relative;
+}
+
 .header__logo {
   display: flex;
   align-items: center;
@@ -507,29 +532,8 @@ header h2 {
 .heart .fas {
   background: linear-gradient(to bottom, #9356dc, #ff79da);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.loader {
-  background-color: #fff;
-  opacity: 0.8;
-  height: 100vh;
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  inset: 0;
-  z-index: 1;
-  animation: loaderDisappear 3s forwards;
-}
-.loader::after {
-  content: "";
-  height: 100px;
-  width: 100px;
-  border-top: 5px solid #9356dc;
-  border-right: 5px solid transparent;
-  border-radius: 50%;
-  animation: spin 3s infinite ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
