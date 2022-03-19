@@ -88,6 +88,12 @@
 }
 
 .heart {
+  & .fas {
+    background: linear-gradient(to bottom, #9356dc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
   &:hover {
     & .far {
       animation: heartDisappear 0.5s forwards;
@@ -430,7 +436,8 @@ header {
   border-radius: 20px;
   padding-left: 15px;
   box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
-  animation: elevate 500ms ease-in-out;
+  animation: elevate 500ms forwards ease-in-out;
+  opacity: 0;
   &__price {
     display: flex;
     align-items: flex-end;
@@ -600,11 +607,4 @@ header {
     max-width: 1280px;
     margin: auto;
   }
-}
-
-.heart .fas {
-  background: linear-gradient(to bottom, #9356dc, #ff79da);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
