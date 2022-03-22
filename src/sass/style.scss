@@ -87,6 +87,10 @@
   animation-delay: 0.3s;
 }
 
+.cards .delay4 {
+  animation-delay: 0.4s;
+}
+
 .heart {
   & .fas {
     background: linear-gradient(to bottom, #9356dc, #ff79da);
@@ -221,6 +225,13 @@ header {
     border: 0;
     border-radius: 25px;
     background-color: var(--grey);
+    &:hover {
+      background-color: var(--Secondary);
+      opacity: 0.5;
+      i {
+        color: var(--Primary);
+      }
+    }
     & i {
       padding: 15px;
     }
