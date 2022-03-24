@@ -246,6 +246,7 @@ header h2 {
 .restaurants__container a {
   color: black;
   text-decoration: none;
+  width: 80%;
 }
 .restaurants__container article {
   background-color: white;
@@ -297,6 +298,7 @@ header h2 {
   align-items: center;
   justify-content: flex-end;
   margin-right: 2em;
+  width: auto;
 }
 
 .fa-heart {
@@ -544,11 +546,14 @@ header h2 {
   }
   .card .cards {
     width: 33%;
+    min-width: 33%;
+    max-width: 33%;
   }
 
   main .menus__container {
     max-width: 1280px;
     margin: auto;
+    padding-right: 40px;
   }
 }
 
